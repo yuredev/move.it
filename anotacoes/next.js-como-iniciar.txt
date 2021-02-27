@@ -1,0 +1,11 @@
+** criar projeto 
+
+yarn create next-app
+
+** instalar typescript para trabalhar com next 
+
+yarn add typescript @types/react @types/react-dom @types/node -D
+
+** rodar projeto next 
+
+yarn dev
