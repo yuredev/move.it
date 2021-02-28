@@ -1,14 +1,17 @@
+// para importar um css module é necessário nomealo
+import styles from "../styles/components/ExperienceBar.module.css";
+
 export default function ExperienceBar() {
   return (
-    <header className="experience-bar">
+    <header className={styles.experienceBar}>
       <span>0 xp</span>
-      <div className="progress-pane">
+      <div className={styles.progressPane}>
         <div 
-          className="progress-pane-percentage"
+          className={styles.progressPanePercentage}
           style={{ width: '50%' }}
         />
         <span 
-          className="current-xp-value"
+          className={styles.currentXpValue}
           style={{left: '50%'}}  
         >
           300 xp

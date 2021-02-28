@@ -1,0 +1,42 @@
+/* arquivo css modules */
+/* o css modules é uma forma que o next possui para estilizar */
+/* componentes do react de forma scoped, assim como no vue */
+
+.experienceBar {
+  display: flex;
+  align-items: center;
+}
+
+.experienceBar span {
+  font-size: 1rem;
+}
+
+.experienceBar > .progressPane {
+  flex: 1;
+  height: 4px;
+  border-radius: 4px;
+  background: var(--gray-line);
+  margin: 0 1.5rem;
+  position: relative;
+}
+
+.experienceBar > .progressPane > .progressPanePercentage {
+  height: 4px;
+  border-radius: 4px;
+  background: var(--green);
+}
+
+.experienceBar > .progressPane > .currentXpValue {
+  position: absolute;
+  top: 12px;
+  /* 
+    a propriedade translateX mexe com o 
+    posicionamento do elemento em relação 
+    a ele mesmo
+    colocando -50% ele pega a metade do tamanho dele
+    e diminui no eixo X
+    como o left está 50% ele será colocando exatamente
+    no meio
+  */
+  transform: translateX(-50%);
+}
