@@ -5,9 +5,9 @@ export default function Profile() {
     <div className={styles.profileContainer}>
       <img src="https://github.com/yuredev.png" alt="Yure Matias"/>
       <div>
-        <b className="bold">
+        <span className="bold">
           Yure Matias
-        </b>
+        </span>
         <p>
           <img src="/icons/level.svg" alt="level"/>
           Level 1
