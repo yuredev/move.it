@@ -56,7 +56,7 @@ export default function Countdown() {
             disabled
             className={styles.countdownButton}
           >
-            Ciclo encerrado
+            Cycle finished
           </button>
         ) : (
           isActive ? (
@@ -65,7 +65,7 @@ export default function Countdown() {
               className={`${styles.countdownButton} ${styles.stopCountdownButton}`}
               onClick={resetCountdown}
             >
-              Abandonar ciclo
+              Abandon cycle
             </button>
           ) : (
             <button 
@@ -73,7 +73,7 @@ export default function Countdown() {
               className={styles.countdownButton} 
               onClick={startCountdown}  
             >
-              Iniciar um ciclo
+              Start a cycle
             </button>
           )
         )

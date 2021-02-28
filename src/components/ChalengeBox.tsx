@@ -10,14 +10,14 @@ export default function ChalengeBox() {
       {
         hasActiveChalenge ? (
           <div className={styles.chalengeActive}>
-            <header>Ganhe 400 xp</header>
+            <header>Gain 400 xp</header>
             <main>
               <img src="icons/body.svg" alt=""/>
               <span className="bold">
-                Novo desafio
+                New challenge
               </span>
               <p>
-                Levante e faça uma caminhada de 3 minutos
+                Get up and take a 10 minute walk
               </p>
             </main>
             <footer>
@@ -26,24 +26,24 @@ export default function ChalengeBox() {
                 className={styles.chalengeFailedButton}
                 onClick={() => {}}
               >
-                Falhei
+                Failed
               </button>
               <button 
                 type="button"
                 className={styles.chalengeSucceededButton}
               >
-                Completei
+                Finished
               </button>
             </footer>
           </div>
         ) : (
           <div className={styles.chalengeNotActive}>
             <span className="bold">
-              Finalize um ciclo para receber um desafio
+              Finish a cycle to receive a challenge
             </span>
             <p>
               <img src="/icons/level-up.svg" alt="Level Up"/>
-              Avance de nível completando desafios
+              Reach the next level finishing challenges
             </p>
           </div>
         )
