@@ -1,38 +1,54 @@
-import React from "react";
+import React, { useContext } from "react";
 import styles from "../styles/components/ChalengeBox.module.css";
+import { ChalengesContext } from "../contexts/ChalengesContext";
+import { CountdownContext } from "../contexts/CountdownContext";
 
 export default function ChalengeBox() {
+  // forma de consumir o contexto
+  // assim como no dart é
+  // Provider.of(context)...
+  const { activeChalenge, resetChalenge, completeChalenge } = useContext(ChalengesContext);
+  const { resetCountdown } = useContext(CountdownContext);
 
-  const hasActiveChalenge = true;
+  function handleChalengeSucceeded() {
+    completeChalenge();
+    resetCountdown();
+  }
+ 
+  function handleChalengeFailed() {
+    resetChalenge();
+    resetCountdown();
+  }
 
   return (
     <div className={styles.chalengeBoxContainer}>
       {
-        hasActiveChalenge ? (
+        activeChalenge ? (
           <div className={styles.chalengeActive}>
-            <header>Gain 400 xp</header>
+            <header>Gain {activeChalenge.amount} xp</header>
             <main>
-              <img src="icons/body.svg" alt=""/>
-              <span className="bold">
+              <img src={`icons/${activeChalenge.type}.svg`} alt=""/>
+              <span className={styles.bold}>
                 New challenge
               </span>
               <p>
-                Get up and take a 10 minute walk
+                {activeChalenge.description}
               </p>
             </main>
             <footer>
               <button 
                 type="button"
                 className={styles.chalengeFailedButton}
-                onClick={() => {}}
+                onClick={handleChalengeFailed}
               >
-                Failed
+                Fail
               </button>
               <button 
                 type="button"
                 className={styles.chalengeSucceededButton}
+                onClick={handleChalengeSucceeded}
               >
-                Finished
+                Finish
               </button>
             </footer>
           </div>
@@ -48,7 +64,6 @@ export default function ChalengeBox() {
           </div>
         )
       }
-      
     </div>
   );
 }

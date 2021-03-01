@@ -2,10 +2,15 @@
 // componentes que se repetem em todas as páginas do site 
 // como header, footer, sidebar etc.
 
+import { ChalengesProvider } from "../contexts/ChalengesContext";
 import "../styles/global.css";
 
 function MyApp({ Component, pageProps }) {
-  return <Component {...pageProps} />
+  return (
+    <ChalengesProvider>
+      <Component {...pageProps} />
+    </ChalengesProvider>
+  );
 }
 
 export default MyApp

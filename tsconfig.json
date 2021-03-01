@@ -22,7 +22,7 @@
     "next-env.d.ts",
     "**/*.ts",
     "**/*.tsx"
-  ],
+, "src/contexts/ChalengeContext.txs"  ],
   "exclude": [
     "node_modules"
   ]

@@ -16,7 +16,6 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-
 }
 
 .chalengeNotActive .bold {
@@ -39,5 +38,65 @@
 }
 
 .chalengeActive {
-  
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.chalengeActive header {
+  color: var(--blue);
+  font-weight: 600;
+  font-size: 1,25rem;
+  padding: 0 2rem 1.5rem;
+  border-bottom: 1px solid var(--gray-line);
+}
+
+.chalengeActive main {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.chalengeActive main .bold {
+  font-weight: 600;
+  font-size: 2rem;
+  color: var(--title);
+  margin: 1.5rem 0 1rem;
+}
+
+.chalengeActive main p {
+  line-height: 1.5;
+}
+
+.chalengeActive footer {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+}
+
+.chalengeActive footer button {
+  height: 3rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 0;
+  border-radius: 5px;
+  color: var(--white);
+  font-size: 1rem;
+  font-weight: 600;
+  transition: .2s;
+}
+
+.chalengeActive footer button.chalengeFailedButton {
+  background: var(--red);
+}
+
+.chalengeActive footer button.chalengeSucceededButton {
+  background: var(--green);
+}
+
+.chalengeActive footer button:hover {
+  filter: brightness(0.9);
 }
