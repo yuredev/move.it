@@ -7,9 +7,7 @@ import "../styles/global.css";
 
 function MyApp({ Component, pageProps }) {
   return (
-    <ChalengesProvider>
-      <Component {...pageProps} />
-    </ChalengesProvider>
+    <Component {...pageProps} />
   );
 }
 

@@ -1,0 +1,13 @@
+O NEXT.js é um framework em cima do React
+ele serve para resolver o problema do React onde há uma dependencia 
+do JavaScript para renderizar a página resultando em uma demora na resposta
+O next.js usa um servidor em node.js para se comunicar com o backend de fato
+em qualquer lang, e se comunicar com a camada do React
+O next junta os dados do backend, Django por exemplo
+e se comunica com a camada do React para montar a interface
+assim que a interface está pronta, o servidor next retorna o html + js + css ao usuário
+assim como funcionam tecnologias de template: ejs, handlebars, thymeleaf etc.
+
+a camada next.js é meio que uma camada backend
+a responsabilidade dela é basicamente juntar os dados do backend de fato
+montar a página com o React e devolover a página pronta pro browser

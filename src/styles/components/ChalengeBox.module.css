@@ -18,7 +18,7 @@
   align-items: center;
 }
 
-.chalengeNotActive .bold {
+.chalengeNotActive strong {
   font-size: 1.5rem;
   font-weight: 500;
   line-height: 1.4;
@@ -59,7 +59,7 @@
   justify-content: center;
 }
 
-.chalengeActive main .bold {
+.chalengeActive main strong {
   font-weight: 600;
   font-size: 2rem;
   color: var(--title);

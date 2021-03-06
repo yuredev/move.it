@@ -12,10 +12,6 @@
   --blue-twitter: #2aa9e0;
 }
 
-.bold {
-  font-weight: bold;
-}
-
 @media(max-width: 1000px) {
   html {
     font-size: 93.75%;

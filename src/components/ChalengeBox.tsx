@@ -28,9 +28,7 @@ export default function ChalengeBox() {
             <header>Gain {activeChalenge.amount} xp</header>
             <main>
               <img src={`icons/${activeChalenge.type}.svg`} alt=""/>
-              <span className={styles.bold}>
-                New challenge
-              </span>
+              <strong> New challenge </strong>
               <p>
                 {activeChalenge.description}
               </p>
