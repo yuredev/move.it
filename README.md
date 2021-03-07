@@ -4,7 +4,7 @@ A React and Next.js app with exercise challenges in the Pomodoro style. Develope
 
 Visit the <a href="https://moveit-dev.netlify.app/">Demo Website</a> 🚀
 
-<img src="screenshots/main.png"
+<img src="screenshots/home-page.png"
 width="800"
 />
 <img src="screenshots/app-behavior.gif"
