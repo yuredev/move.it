@@ -4,20 +4,27 @@ A React and Next.js app with exercise challenges in the Pomodoro style. Develope
 
 Visit the <a href="https://moveit-dev.netlify.app/">Demo Website</a> 🚀
 
+## Technologies applied 
+
+- React
+- React Context API
+- Next.js
+- Cookies
+- Audio Web API
+
 <img src="screenshots/home-page.png"
 width="800"
 />
 <img src="screenshots/app-behavior.gif"
 width="800"
 />
-
-
+ 
 ## Installing
 
 ```bash
-yarn
-# or
 npm install
+# or
+yarn
 ```
 
 ## Running
