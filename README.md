@@ -2,8 +2,14 @@
 
 A React and Next.js app with exercise challenges in the Pomodoro style. Developed during the Next Level Week 4 from @Rocketseat
 
-![Home Page](screenshots/main.png "Title")
+Visit the <a href="https://moveit-dev.netlify.app/">Demo Website</a> 🚀
 
+<img src="screenshots/main.png"
+width="800"
+/>
+<img src="screenshots/app-behavior.gif"
+width="800"
+/>
 
 
 ## Installing

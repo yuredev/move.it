@@ -16,8 +16,7 @@ interface ICountdownProviderProps {
 
 export const CountdownContext = createContext({} as  ICountdownContextData);
 // total time in seconds
-// const TOTAL_TIME = 25 * 60;
-const TOTAL_TIME = 6;
+const TOTAL_TIME = 25 * 60;
 let countDownTimeout: NodeJS.Timeout; 
 
 export function CountdownProvider({ children }: ICountdownProviderProps) {
