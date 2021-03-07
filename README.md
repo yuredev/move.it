@@ -11,6 +11,7 @@ Visit the <a href="https://moveit-dev.netlify.app/">Demo Website</a> 🚀
 - Next.js
 - Cookies
 - Audio Web API
+- Notification API
 
 <img src="screenshots/home-page.png"
 width="800"
